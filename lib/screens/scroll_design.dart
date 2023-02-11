@@ -13,6 +13,8 @@ class ScrollScreen extends StatelessWidget {
             ]
           )
         );
+
+  const ScrollScreen({super.key});
   
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class ScrollScreen extends StatelessWidget {
         child: PageView(
           physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
-          children: [
+          children: const [
             Page1(),
             Page2()
           ],
@@ -33,20 +35,22 @@ class ScrollScreen extends StatelessWidget {
 }
 
 class Page1 extends StatelessWidget {
+  const Page1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [
+      children: const [
         Background(),
 
-        const MainContent()
+        MainContent()
       ],
     );
   }
 }
 
 class Background extends StatelessWidget {
+  const Background({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -89,6 +93,7 @@ class MainContent extends StatelessWidget {
 }
 
 class Page2 extends StatelessWidget {
+  const Page2({super.key});
 
   @override
   Widget build(BuildContext context) {

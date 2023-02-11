@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -33,7 +35,7 @@ class Background extends StatelessWidget {
 }
 
 class _PinkBox extends StatelessWidget {
-  const _PinkBox({super.key});
+  const _PinkBox();
 
   @override
   Widget build(BuildContext context) {

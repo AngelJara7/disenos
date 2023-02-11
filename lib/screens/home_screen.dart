@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:disenos/widgets/card_table.dart';
-import 'package:disenos/widgets/Background.dart';
+import 'package:disenos/widgets/background.dart';
 import 'package:disenos/widgets/page_title.dart';
 import 'package:disenos/widgets/custom_bottom_navigation.dart';
 
 class HomeScreen extends StatelessWidget {
-  
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

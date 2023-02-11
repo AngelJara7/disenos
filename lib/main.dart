@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "home_screen",
       routes: {
         "basic_design": (_) => const BasicDesignScreen(),
-        "scroll_screen": (_) => ScrollScreen(),
-        "home_screen": (_) => HomeScreen()
+        "scroll_screen": (_) => const ScrollScreen(),
+        "home_screen": (_) => const HomeScreen()
       },
     );
   }
